@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/noramlize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/noramlize.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
@@ -16,7 +16,7 @@
  </head>
  <body>
     <div class="site-container">
-        <div id="menu" class="burger_menu is-active">
+        <div id="menu" tabindex="1" class="burger_menu is-active">
                     <ul class="burger_list ">
                         <li class="Burger_item"><a class="Burger_link" href="">О нас</a> </li>
                         <li class="Burger_item"><a class="Burger_link" href="">Этапы </a> </li>
@@ -28,18 +28,18 @@
         <div class="Header_container">
                 <button id="burger" class="btn_burger"></button>
                 <a class="header_left_logo" href="#">
-                        <img class="Header_logo_320" src="/image/logo_320.png" alt="logo" >
-                    <img class="Header_logo" src="/image/evklid_logo.png" alt="logo">
+                        <img class="Header_logo_320" src="/image/logo_320.png" tabindex="2" alt="logo" >
+                    <img class="Header_logo" src="/image/evklid_logo.png" tabindex="1" alt="logo">
                 </a>
                 <div class="header_right">
                 <nav  class="header_nav ">
                         <ul class="header_nav_list">
-                        <li class="header_list_item"><a class="header_nav_link" href="" >О нас</a> </li>
-                        <li class="header_list_item"><a class="header_nav_link" href="">Этапы </a> </li>
-                        <li class="header_list_item"><a class="header_nav_link" href="">FAQ</a></li>
-                        <li class="header_list_item"><a class="header_nav_link" href="">Контакты</a></li>
+                        <li class="header_list_item"><a class="header_nav_link" tabindex="2" href="" >О нас</a> </li>
+                        <li class="header_list_item"><a class="header_nav_link" tabindex="3" href="">Этапы </a> </li>
+                        <li class="header_list_item"><a class="header_nav_link" tabindex="4" href="" aria-label="Часто Задаваемые Вопросы">FAQ</a></li>
+                        <li class="header_list_item"><a class="header_nav_link" tabindex="5" href="">Контакты</a></li>
                         </ul>
-                        <button class="header_search_btn"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <button tabindex="6" class="header_search_btn" aria-label="поиск"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="19.5138" y="18.5495" width="8" height="2" transform="rotate(45 19.5138 18.5495)" fill="currentColor"/>
                             <circle cx="11.5" cy="11.5" r="10.5" stroke="currentColor" stroke-width="2"/>
                             </svg>
@@ -65,12 +65,12 @@
                         <div class="swiper-slide"><img src="/image/hero_background_img3_full.jpg" alt=""></div>    
                     </div>    
                     <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                         <div class="swiper-button-next"></div>
+                        <div tabindex="7" class="swiper-button-prev"></div>
+                         <div tabindex="8" class="swiper-button-next"></div>
                          <div class="hero_content">
-                    <h1 class="hero-heading">Проектные решения любой сложности</h1>
-                    <p class="hero_descriptions">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p> 
-                    <button class="btn hero_button">Заказать расчет</button>
+                    <h1 tabindex="" class="hero-heading">Проектные решения любой сложности</h1>
+                    <p  tabindex="" class="hero_descriptions">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p> 
+                    <button tabindex="9" aria-label="Заказать расчет" class="btn hero_button">Заказать расчет</button>
                       </div>
             </div>
         </section>
@@ -89,11 +89,11 @@
                     <p class="aboutus_left_inside_text">
                         Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.
                     </p>
-                     <div class="aboutus_left_inside_btn"><a class="button_aboutus">Подробнее </a></div>
+                     <div class="aboutus_left_inside_btn" ><a tabindex="10"  aria-label="Узнать подробнее" class="button_aboutus">Подробнее </a></div>
                  </div>
                  </div>
                  <div class=" aboutus_right">
-                  <div class="aboutus_description">
+                  <div class="aboutus_description" tabindex="11">
                       <div class="aboutus_description_inside">
                      <div class="description_figures"> <img class="figure_img" src="./image/figure_image.svg" alt=""></div>
                        <div class="description-text"> 
@@ -102,7 +102,7 @@
                       </div>
                     </div>
                  </div>
-                     <div class="aboutus_description">
+                     <div class="aboutus_description" tabindex="12" >
                          <div class="aboutus_description_inside">
                       <div class="description_figures"><img class="figure_img" src="./image/figure_img_2.svg" alt=""></div>
                         <div class="description-text"> 
@@ -117,13 +117,13 @@
          </section>
          <section class="how_we_working">
             <div class="container_how_we_working">
-                <h2 class="heading">Как мы работает</h2>
+                <h2 tabindex="13" class="heading">Как мы работает</h2>
                 <nav class="nav_steps">
-                    <ul class="steps_list">
-                        <li class="steps_item"><button class="steps_item_link" data-path="one" href="">1 шаг</button> </li>
-                        <li class="steps_item"><button class="steps_item_link" data-path="two" href="">2 шаг</button> </li>
-                        <li class="steps_item"><button class="steps_item_link" data-path="three" href="">3 шаг</button> </li>
-                        <li class="steps_item"><button class="steps_item_link" data-path="four" href="">4 шаг</button> </li>
+                    <ul aria-label="Этапы пошагово" class="steps_list">
+                        <li class="steps_item"><button class="steps_item_link" data-path="one" tabindex="14" aria-label="шаг первый" href="">1 шаг</button> </li>
+                        <li class="steps_item"><button class="steps_item_link" data-path="two" tabindex="15" aria-label="шаг второй" href="">2 шаг</button> </li>
+                        <li class="steps_item"><button class="steps_item_link" data-path="three" tabindex="16" aria-label="шаг третий" href="">3 шаг</button> </li>
+                        <li class="steps_item"><button class="steps_item_link" data-path="four" tabindex="17" aria-label="шаг четвертый" href="">4 шаг</button> </li>
                     </ul>
                 </nav> 
                 <div class="how_we_working_down steps-active" data-target="one">
@@ -135,8 +135,8 @@
                         </p>
                         </div>
                         <div class="working_btn">
-                            <button class="btn working_btn_btn">Подробнее</button>
-                            <a href="" class="working_btn_link">Договор</a>
+                            <button class="btn working_btn_btn" tabindex="18" aria-label="узнать подробнее">Подробнее</button>
+                            <a href="" class="working_btn_link" tabindex="19" aria-label="Договор" >Договор</a>
                         </div>
                     </div>
                     <div class="how_we_working_right">
@@ -203,18 +203,18 @@
          </section>
          <section class="questions">
             <div class="questions_container">
-                <h2 class="heading ">Часто задаваемые вопросы</h2>
+                <h2 tabindex="20" class="heading ">Часто задаваемые вопросы</h2>
                 <div id="accordion">
-                    <h3 style="border-top:1px solid #cacaca;" >Из чего формируется конечная стоимость проекта?</h3>
-                    <div  >
+                    <h3  style="border-top:1px solid #cacaca;" >Из чего формируется конечная стоимость проекта?</h3>
+                    <div tabindex="21">
                       <p>
                         Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
 
                         Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. 
                       </p>
                     </div>
-                    <h3>У меня есть свой проект. Сможем ли мы его доработать / реализовать?</h3>
-                    <div>
+                    <h3 >У меня есть свой проект. Сможем ли мы его доработать / реализовать?</h3>
+                    <div tabindex="22">
                       <p>
                       Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
                       purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
@@ -222,8 +222,8 @@
                       suscipit faucibus urna.
                       </p>
                     </div>
-                    <h3>Я выбираю между разными компаниями. В чём ваше отличие?</h3>
-                    <div>
+                    <h3 >Я выбираю между разными компаниями. В чём ваше отличие?</h3>
+                    <div tabindex="23">
                       <p>
                       Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
                       Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
@@ -232,7 +232,7 @@
                       </p>
                     </div>
                     <h3>Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? </h3>
-                    <div>
+                    <div tabindex="24" >
                       <p>
                       Cras dictum. Pellentesque habitant morbi tristique senectus et netus
                       et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
@@ -246,7 +246,7 @@
                       </p>
                     </div>
                     <h3>Могу ли я вернуть деньги на каком-либо из этапов работ? </h3>
-                    <div>
+                    <div tabindex="25">
                       <p>
                       Cras dictum. Pellentesque habitant morbi tristique senectus et netus
                       et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
@@ -266,31 +266,31 @@
        </main>
        <footer class="footer">
         <div class="row  footer_container">
-            <div class=" footer_col-1 footer_marg">
-                <div class="logo footer_logo"> <img class="logo_img" src="/image/logo_img_footer.png" alt="logo"></div>
-                <ul class="footer_list">
-                    <li class="footer_list_item"><a class="footer_item_link" href="">О нас</a></li>
-                    <li class="footer_list_item"><a class="footer_item_link" href="">Проекты</a></li>
-                    <li class="footer_list_item"><a class="footer_item_link" href="">Отзывы</a></li>
-                    <li class="footer_list_item"><a class="footer_item_link" href="">Договоры оферты</a></li>
-                    <li class="footer_list_item"><a class="footer_item_link" href="">Договор подряда</a></li>
-                    <li class="footer_list_item"><a class="footer_item_link" href="">Конфиденциальность</a></li>
-                    <li class="footer_list_item"><a class="footer_item_link" href="">Партнерское соглашение</a></li>
+            <div class="footer_col-1 footer_marg">
+                <div tabindex="26" class="logo footer_logo"> <img class="logo_img" src="/image/logo_img_footer.png" alt="logo"></div>
+                <ul aria-label="навигиция" tabindex="27" class="footer_list">
+                    <li class="footer_list_item"><a tabindex="28" class="footer_item_link" href="">О нас</a></li>
+                    <li class="footer_list_item"><a tabindex="29" class="footer_item_link" href="">Проекты</a></li>
+                    <li class="footer_list_item"><a tabindex="30" class="footer_item_link" href="">Отзывы</a></li>
+                    <li class="footer_list_item"><a tabindex="31" class="footer_item_link" href="">Договоры оферты</a></li>
+                    <li class="footer_list_item"><a tabindex="32" class="footer_item_link" href="">Договор подряда</a></li>
+                    <li class="footer_list_item"><a tabindex="33" class="footer_item_link" href="">Конфиденциальность</a></li>
+                    <li class="footer_list_item"><a tabindex="34" class="footer_item_link" href="">Партнерское соглашение</a></li>
                 </ul>
-                <div class="footer_social">
-                    <a class="footer_social_link"  href=""><img class="footer_social_link" src="./image/fb.svg" alt=""></a>
-                    <a class="footer_social_link"  href=""><img class="footer_social_link" src="/image/vk.svg" alt=""></a>
-                    <a class="footer_social_link"  href=""><img class="footer_social_link" src="./image/instagram.svg" alt=""></a>
+                <div aria-label="ссылки на социальные сети" class="footer_social">
+                    <a tabindex="35" aria-label="фуйсбук" class="footer_social_link"  href=""><img class="footer_social_link" src="./image/fb.svg" alt=""></a>
+                    <a tabindex="36" aria-label="вконтакте" class="footer_social_link"  href=""><img class="footer_social_link" src="/image/vk.svg" alt=""></a>
+                    <a tabindex="37" aria-label="инстаграм" class="footer_social_link"  href=""><img class="footer_social_link" src="./image/instagram.svg" alt=""></a>
                 </div>
             </div>
             <div class="col-4 footer_form_col footer_marg">
-                <h3 class="footer_heading" >Оставить заявку</h3>
-                <form class="footer_form" action="">
-                    <input type="text" name="name" placeholder="Фамилия, имя и отчество*" class="footer_input">
-                    <input type="mail" name="mail" placeholder="E-mail*" class="footer_input">
-                    <textarea class="footer_textarea footer_input" type="textarea" name="text" placeholder="Сообщение.." cols="30" rows="10" ></textarea>
+                <h3 tabindex="38"  class="footer_heading" >Оставить заявку</h3>
+                <form aria-label="форма для заполнения обратной связи" class="footer_form" action="">
+                    <input tabindex="39" type="text" name="name" placeholder="Фамилия, имя и отчество*" class="footer_input">
+                    <input tabindex="40" type="mail" name="mail" placeholder="E-mail*" class="footer_input">
+                    <textarea tabindex="41" class="footer_textarea footer_input" type="textarea" name="text" placeholder="Сообщение.." cols="30" rows="10" ></textarea>
                     <div class="footer_politic">
-                    <button  type="submit" class="btn footer_btn">Отправить данные </button>
+                    <button aria-label="отправить данные"  type="submit" class="btn footer_btn">Отправить данные </button>
                     <input class="footer_checkbox" type="checkbox" id="politics" autocomplete="on">
                     <label  class="label"  for="politics">Согласен на обработку данных</label>
                     </div>
