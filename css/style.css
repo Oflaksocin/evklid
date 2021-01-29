@@ -815,21 +815,21 @@ html{
         max-width: 768px;
     }
     .header_right{
-        margin-right: 60px;
+        margin-right: 20px;
     }
     .header_list_item{
         display: none ;
     }
     .btn_burger{
         display:block ;
-        margin-left: 30px;
+        margin-left: 20px;
     }
     .hero_content{
         max-width: 700px;
         position: absolute;
         z-index: 1;
-        top: 130px;
-        left: 45px;
+        top: 90px;
+        left: 30px;
     }
     .hero-heading{
         margin: 0;
@@ -939,6 +939,11 @@ html{
 }
  @media(max-width:500px) and (min-width:0px){
     
+.hero-heading{
+  margin: 0;
+  font-size: 52px;     
+  line-height: 68px;
+ }
    .section_aboutus_down{
     display: block;
 }
